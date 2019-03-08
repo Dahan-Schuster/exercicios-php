@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="br">
     <head>
         <title>Peso ideal</title>
         <meta charset="utf-8"/>
@@ -9,11 +9,14 @@
     <body>
         <form action="" method="post">
             <b>Vamos calcular seu peso ideal!</b><br/><br/>
-            ALTURA: <input type="number" name="altura" step="0.01"><br>
+            <label for="altura">ALTURA:</label>
+            <input type="number" name="altura" step="0.01" id="altura"><br>
             <br/>
             SEXO: <br/>
-            <input type="radio" name="sexo" value="M"> Masculino<br>
-            <input type="radio" name="sexo" value="F"> Feminino<br>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" value="M" id="masculino"><br>
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="sexo" value="F" id="feminino"><br>
             <br/>
             <input type="submit" value="Enviar"/>
         </form>

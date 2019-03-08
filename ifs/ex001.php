@@ -1,5 +1,5 @@
-<!DOCTYPE html/>
-<html>
+<!DOCTYPE html>
+<html lang="br">
 <body>
     <h4>Jogador de futebol:</h4>
     <h4>

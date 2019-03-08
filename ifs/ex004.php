@@ -1,7 +1,8 @@
-<!DOCTYPE html/>
+<!DOCTYPE html>
 <html lang="pt-br">
     <head>
-    <meta charset="utf-8"/>
+        <title>Vena de picolés</title>
+        <meta charset="utf-8"/>
     </head>
 <body>
     <h3>Venda de picolés</h3>

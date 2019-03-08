@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 
-<htmL>
+<html lang="br">
     <head>
     <meta charset="utf-8"/>
+    <title>Variáveis</title>
     <link rel="icon" type="text/css" href="_icones/variaveis.ico"/>
     <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
     </head>
@@ -22,7 +23,7 @@
         function tipos() {
             
             // exemplos com a palavra-chave global
-            global $idade, $deMaior;
+            global $idade, $deMaior, $nome, $peso;
             
             echo '<br><br>Nome: ' ;
             var_dump($GLOBALS['nome']); // exemplo com a superglobal $GLOBALS
@@ -73,4 +74,4 @@
         ?>
     </div>
     </body>
-</htmL>
+</html>

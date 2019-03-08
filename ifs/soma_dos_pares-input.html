@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="br">
     <head>
         <title>Soma dos pares em um intervalo</title>
         <meta charset="utf-8"/>
@@ -8,9 +8,11 @@
     
     <body>
         <form action="soma_dos_pares.php" method="post">
-            Limite inferior: <input type="number" name="inferior"/><br/>
+            <label for="inferior">Limite inferior:</label>
+            <input type="number" name="inferior" id="inferior"/><br/>
             <br/>
-            Limite superior: <input type="number" name="superior"/><br/>
+            <label for="superior">Limite superior:</label>
+            <input type="number" name="superior" id="superior"/><br/>
             <br/>
             <input type="submit" value="CALCULAR"/>
         </form>

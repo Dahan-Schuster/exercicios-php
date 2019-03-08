@@ -1,5 +1,5 @@
-<!DOCTYPE html/>
-<html>
+<!DOCTYPE html>
+<html lang="br">
 <body>
     <h3>Media do aluno</h3>
     <h4>
