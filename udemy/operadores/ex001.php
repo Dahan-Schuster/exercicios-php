@@ -62,6 +62,12 @@ echo "a é maior-igual que b: "; var_dump($a >= $b);
 echo "a é maior-igual que b: "; var_dump($a <= $b);
 
 echo "PHP 7 APENAS<br>";
-echo '<br>OPERADOR SPACESHIP: echo "Quem é maior? (1) -> a; (0) -> são iguais; (-1) -> b :"; var_dump($a <=> $b);';
+echo '<br>OPERADOR SPACESHIP (<b>PHP7</b>): <br/>';
+echo "<pre>Quem é maior? a ou b? 
+    ( 1) -> a; 
+    ( 0) -> são iguais; 
+    (-1) -> b
+
+    RES ---------> "; var_dump($a <=> $b);
 
 ?>
