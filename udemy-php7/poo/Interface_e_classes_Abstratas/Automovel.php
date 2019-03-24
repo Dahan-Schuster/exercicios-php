@@ -3,12 +3,12 @@
  * Created by PhpStorm.
  * User: dahan
  * Date: 24/03/19
- * Time: 15:20
+ * Time: 15:28
  */
 
 include_once 'Veiculo.php';
 
-class Civic implements Veiculo
+abstract class Automovel implements Veiculo
 {
 
     public function acelerar($velocidade)
@@ -19,8 +19,8 @@ class Civic implements Veiculo
 
     public function frenar($velocidade)
     {
-       echo "Frenando até alcançar $velocidade Km/h...<br>";
-       echo "ieeeeen!";
+        echo "Frenando até alcançar $velocidade Km/h...<br>";
+        echo "ieeeeen!";
     }
 
     public function trocarMarcha($marcha)
