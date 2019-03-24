@@ -1,4 +1,9 @@
+# Pastas .idea geradas pela IDE
 */*idea/*
 *idea/*
+
+# Diagrama de tabelas feito no MySQL WorkBench
 *.mwb
+
+# Arquivos baixados do curso e utilizados como referência
 udemy-php-mysql/projeto-baixado/
