@@ -1,10 +1,19 @@
 <?php
 
+# instanciando um objeto utilizando o método mágico __contruct() (construtor)
 $endereco = new Endereco("Rua Dos Bobos", 0, "Fantasma");
 
 foreach ($endereco->exibir() as $chave => $valor):
     echo "$chave : $valor <br/>";
 endforeach;
+
+echo "<br/>";
+
+echo $endereco; # utiliza o método __tostring()
+
+echo "<br/><br/>";
+
+unset($endereco); # utiliza o método __destruct()
 
 class Endereco {
 
@@ -18,6 +27,14 @@ class Endereco {
         $this->cidade = $cid;
     }
 
+    public function __destruct() {
+        echo "Objeto destruído";
+    }
+
+    public function __toString():string {
+        return  "$this->logradouro, $this->numero - " . strtoupper($this->cidade);
+    }
+
     public function exibir():array {
         return array(
           "Logradouro"=>$this->logradouro,
@@ -25,7 +42,6 @@ class Endereco {
           "Cidade"=>$this->cidade
         );
     }
-
 
     public function getLogradouro()
     {
