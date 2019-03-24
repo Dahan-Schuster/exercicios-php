@@ -1,0 +1,16 @@
+<?php
+
+class Pessoa {
+
+    public $nome; # atributo
+
+    public function falar() { # método
+        return "O meu nome é " . $this->nome;
+    }
+}
+
+$dan = new Pessoa();
+$dan->nome = "Dahan Schuster";
+echo $dan->falar();
+
+?>
