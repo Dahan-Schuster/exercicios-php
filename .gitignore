@@ -1,6 +1,6 @@
 # Pastas .idea geradas pela IDE
-*/*idea/*
-*idea/*
+*/.idea/
+.idea/
 
 # Diagrama de tabelas feito no MySQL WorkBench
 *.mwb
