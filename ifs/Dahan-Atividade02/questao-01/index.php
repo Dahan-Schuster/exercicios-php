@@ -51,10 +51,10 @@
         </tr>
         <tr>
             <td style="text-align: right; padding-top: 20px;">
-                <input type="submit"/>
+                <input type="submit" value="Enviar"/>
             </td>
             <td style="text-align: left; padding-top: 20px;">
-                <input type="reset"/>
+                <input type="reset" value="Limpar dados"/>
             </td>
         </tr>
     </table>
