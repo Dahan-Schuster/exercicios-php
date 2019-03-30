@@ -28,6 +28,12 @@ if (isset($_GET['pagina'])):
         case 'matriculas':
             include_once 'views/matriculas.php';
             break;
+        case 'inserir_curso':
+            include_once 'views/inserir_curso.php';
+            break;
+        case 'inserir_aluno':
+            include_once 'views/inserir_aluno.php';
+            break;
         default:
             include_once 'views/home.php';
             break;

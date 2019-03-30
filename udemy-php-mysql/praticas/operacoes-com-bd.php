@@ -130,6 +130,9 @@ function apagarDados()
 # Apagando dados da tabela Curso
     mysqli_query($conexao, "DELETE FROM CURSO WHERE id > 3");
 
+# Apagando dados da tabela Aluno_faz_curso (Matriculas)
+    mysqli_query($conexao,  "DELETE FROM ALUNO_FAZ_CURSO WHERE ID > 8");
+
 }
 
 function atualizarDados()

@@ -35,6 +35,45 @@ footer {
     color: white;
 }
 
+.formulario {
+    display: flex;
+    justify-content: center;
+    font-size: 16pt;
+}
+
+.formulario th {
+    text-align: right;
+}
+
+.formulario input {
+    font-size: 14pt;
+}
+
+.formulario input[type="number"] {
+    text-align: right;
+    width: 175px;
+}
+
+.submit-cadastro {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-cadastro input {
+    border: 0px;
+    background-color: forestgreen;
+    color: white;
+    padding: 10px;
+}
+
+.submit-cadastro:hover input {
+    background-color: #00d33a;
+    color: black;
+    cursor: pointer;
+}
+
+
+
 /* class */
 .container {
     margin: auto;

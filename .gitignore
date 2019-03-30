@@ -7,3 +7,6 @@
 
 # Arquivos baixados do curso e utilizados como referência
 udemy-php-mysql/projeto-baixado/
+
+# Exercícios práticos (ignorados apenas durante a construção do CRUD DOgCursos)
+udemy-php-mysql/praticas/
