@@ -24,6 +24,17 @@ footer {
     color: lightgray;
 }
 
+.lista td{
+    text-align: center;
+    background-color: #e3e3e3;
+}
+
+.lista th {
+    border-bottom: thin solid black;
+    background-color: #2f6679;
+    color: white;
+}
+
 /* class */
 .container {
     margin: auto;

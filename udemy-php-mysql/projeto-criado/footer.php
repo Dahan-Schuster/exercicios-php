@@ -2,7 +2,10 @@
 
 <footer>
     <div class="container">
-    DogCursos&copy; Nenhum direito reservado
+        &copy;2019 DogCursos Nenhum direito reservado
     </div>
 
 </footer>
+
+</body>
+</html>
