@@ -17,7 +17,8 @@
 <body>
 	<h4>
 		<?php
-			echo 'Seu php também está em perfeitas condições :)';
+			echo 'Seu php também está em perfeitas condições :) <br>';
+			phpinfo();
 		?>
 	</h4>
 </body>
