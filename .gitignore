@@ -1,12 +1,13 @@
 # Pastas .idea geradas pela IDE
 */.idea/
 .idea/
+.idea/*.xml
 
 # Diagrama de tabelas feito no MySQL WorkBench
 *.mwb
 
 # Arquivos baixados do curso e utilizados como referência
-udemy-php-mysql/projeto-baixado/
+public_html/udemy-php-mysql/projeto-baixado/
 
 # Exercícios práticos (ignorados apenas durante a construção do CRUD DOgCursos)
-udemy-php-mysql/praticas/
+public_html/udemy-php-mysql/praticas/
