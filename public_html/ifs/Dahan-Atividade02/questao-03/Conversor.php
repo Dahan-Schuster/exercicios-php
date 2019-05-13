@@ -4,6 +4,8 @@ class Conversor
 {
     private $moedaOrigem;
 
+
+    /* TODO buscar da web taxas atualizadas com JQuery */
     public static $TAXA_CAMBIO_DOLAR_REAL = 3.87;
     public static $TAXA_CAMBIO_EURO_REAL = 4.37;
     public static $TAXA_CAMBIO_LIBRA_REAL = 5.11;

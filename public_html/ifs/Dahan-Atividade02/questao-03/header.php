@@ -2,7 +2,7 @@
 <html lang="PT-br">
 <head>
     <title>Conversor de moedas</title>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8"/>xx
     <meta name="author" content="Dahan Schuster">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
