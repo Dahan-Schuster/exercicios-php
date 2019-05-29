@@ -1,0 +1,114 @@
+/* CABEÇALHO */
+
+img#ifs-logo {
+    width: 250px;
+}
+body {
+    font-family: 'Inconsolata', monospace;
+    background: #dddddd;
+}
+table#cabecalho {
+    background: #e2ff72;
+    padding: 5px;
+    margin-top: -5px;
+    border-bottom: 3px dotted black;
+    font-size: 15pt;
+}
+h1#titulo-ifs {
+    margin: 0;
+    font-size: 18pt;
+}
+table#titulo {
+    font-family: 'Inconsolata', monospace;
+    background: #ea4b4b;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    font-size: 18pt;
+}
+
+/* FIM CABEÇALHO */
+
+/* CORPO */
+
+div#interface {
+    background: #ffffff;
+    box-shadow: 1px 1px 10px gray;
+    width: 710px;
+    margin: auto;
+    padding: 5px;
+}
+
+input:focus, select:focus,input:hover, select:hover {
+    border: 2px solid #555;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background: #199362;
+}
+input[type="submit"] {
+    background: #27e599;
+    border: 0px;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 12pt;
+}
+
+
+.tabela {
+    font-size: 13pt;
+}
+
+.tabela th {
+    background: #c4440d;
+    color: white;
+}
+
+.tabela td {
+    border-bottom: 2px solid #c4440d;
+    padding-left: 5px;
+}
+
+.dir {
+    border-right: 2px solid #c4440d;
+}
+
+.esq {
+    border-left: 2px solid #c4440d;
+}
+
+.top {
+     border-top: 2px solid #c4440d;
+}
+
+.botao {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* FIM CORPO */
+
+/* RODAPÉ */
+table#rodape {
+    background: rgb(200,200,200);
+    text-align: center;
+    border-top: 1px solid black;
+    font-size: 10pt;
+}
+
+
+table#rodape a {
+    color: black;
+    text-decoration: none;
+}
+table#rodape a:hover, a:focus {
+    color: #11897d;
+}
+
+/* FIM RODAPÉ */
