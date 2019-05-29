@@ -1,4 +1,4 @@
-<?php include 'header.php'?>
+<?php include 'header.php' ?>
 <hr>
 <h1>Preencha sua incrição:</h1>
 <form action="confirmar-dados.php" method="post">

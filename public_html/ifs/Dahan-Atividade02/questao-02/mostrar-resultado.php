@@ -1,4 +1,4 @@
-<?php include 'header.php'?>
+<?php include 'header.php' ?>
 <hr>
 <h1>Sua sala será...</h1>
 <?php
@@ -55,6 +55,6 @@ function consultarSalaAgropecuaria($nome): string
 ?>
 
 <hr>
-<?php include 'footer.php'?>
+<?php include 'footer.php' ?>
 </body>
 </html>
