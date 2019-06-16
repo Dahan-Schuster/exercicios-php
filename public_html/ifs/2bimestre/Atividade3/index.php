@@ -20,9 +20,10 @@
     else {
         include('formLogin.php');
     }
-        
-    include('footer.php');
 ?>
+    <h3 style="text-align: center;">É necessário criar um banco de dados chamado "Produtos" em seu MySQL. O programa se encarrega das tabelas.</h3>
+
+<?php include('footer.php');?>
 </div>
 </body>
 </html>
