@@ -22,6 +22,8 @@
     }
 ?>
     <h3 style="text-align: center;">É necessário criar um banco de dados chamado "Produtos" em seu MySQL. O programa se encarrega das tabelas.</h3>
+    <h4 style="text-align: center;">Login inicial: admin <br> 
+        Senha: 1234 </h4>
 
 <?php include('footer.php');?>
 </div>

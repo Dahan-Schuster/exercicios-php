@@ -15,10 +15,9 @@
         session_start(); 
 
         echo "<h1 style='text-align: center; font-size: 18pt;'>Seja bem vindo, " . 
-            $_SESSION['usuario'] . 
-            "<br>" . 
-            "Você é um usuário " . $_SESSION['tipo_usuario'] . ". Estas são suas opções:" . 
-            "</h1>";
+            $_SESSION['usuario'] . "</h1>" . 
+            "<h3 style='text-align: center;''>Você é um usuário " . $_SESSION['tipo_usuario'] . ". Estas são suas opções:" . 
+            "</h3>";
 
     ?>
 
