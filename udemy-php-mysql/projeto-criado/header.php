@@ -18,7 +18,7 @@
         </div>
 	</header>
 
-	<!-- divisão que será fechada no arquivo footer -->
+	<!-- div que será fechada no arquivo footer -->
 	<div id="conteudo" class="container" >
 	
 

@@ -7,12 +7,14 @@
     </tr>
 
     <?php
-    while ($linha = mysqli_fetch_array($listaDeAlunos)) {
-        echo '<tr><td>'.$linha['nomeAluno'].'</td>';
-        echo '<td>'.$linha['emailAluno'].'</td>';
-        $dataNascimento = $linha['nascimentoAluno'];
-        echo '<td>' . formatarDataDeNascimentoComBarras($dataNascimento) . '</td></tr>';
+    if ($listaDeAlunos != false) {
+        while ($linha = mysqli_fetch_array($listaDeAlunos)) {
+            echo '<tr><td>'.$linha['nome_aluno'].'</td>';
+            echo '<td>'.$linha['email_aluno'].'</td>';
+            $dataNascimento = $linha['data_nascimento'];
+            echo '<td>' . formatarDataDeNascimentoComBarras($dataNascimento) . '</td></tr>';
 
+        }
     }
 
 

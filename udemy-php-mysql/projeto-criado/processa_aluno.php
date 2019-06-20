@@ -10,7 +10,7 @@ echo $nome_aluno;
 echo $email_aluno;
 echo $nascimento_aluno;
 
-$queryInsertAluno = "INSERT INTO ALUNO(nomeAluno, emailAluno, nascimentoAluno) values 
+$queryInsertAluno = "INSERT INTO ALUNOS(nome_aluno, email_aluno, data_nascimento) values 
 ('$nome_aluno', '$email_aluno', '$nascimento_aluno')";
 
 var_dump(mysqli_query($conexao, $queryInsertAluno));

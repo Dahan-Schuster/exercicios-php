@@ -34,6 +34,9 @@ if (isset($_GET['pagina'])):
         case 'inserir_aluno':
             include_once 'views/inserir_aluno.php';
             break;
+        case 'inserir_matricula':
+            include_once 'views/inserir_matricula.php';
+            break;
         default:
             include_once 'views/home.php';
             break;

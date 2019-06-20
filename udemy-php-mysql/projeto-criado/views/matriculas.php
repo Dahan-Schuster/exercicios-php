@@ -5,9 +5,11 @@
     </tr>
 
     <?php
-    while ($linha = mysqli_fetch_array($listaDeMatriculas)) {
-        echo '<tr><td>'.$linha['Aluno'].'</td>';
-        echo '<td>'.$linha['Curso'].'</td></tr>';
+    if ($listaDeMatriculas != false) {
+        while ($linha = mysqli_fetch_array($listaDeMatriculas)) {
+            echo '<tr><td>'.$linha['Aluno'].'</td>';
+            echo '<td>'.$linha['Curso'].'</td></tr>';
+        }
     }
 
     ?>

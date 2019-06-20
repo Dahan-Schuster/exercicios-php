@@ -6,9 +6,12 @@
     </tr>
 
     <?php
-        while ($linha = mysqli_fetch_array($listaDeCursos)) {
-            echo '<tr><td>'.$linha['nomeCurso'].'</td>';
-            echo '<td>'.$linha['duracaoCurso'].'</td></tr>';
+
+        if ($listaDeCursos != false) {
+            while ($linha = mysqli_fetch_array($listaDeCursos)) {
+                echo '<tr><td>'.$linha['nome_curso'].'</td>';
+                echo '<td>'.$linha['carga_horaria'].'</td></tr>';
+            }
         }
 
     ?>
