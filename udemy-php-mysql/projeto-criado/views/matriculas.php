@@ -1,4 +1,7 @@
-<table class="lista" style="border:1px solid #ccc; width: 100%;">
+
+
+<a href="?pagina=inserir_matricula">Inserir Matrícula</a>
+<table class="lista" align="center">
     <tr>
         <th>Nome do aluno</th>
         <th>Nome do curso</th>

@@ -24,6 +24,11 @@ footer {
     color: lightgray;
 }
 
+.lista {
+    border: 1px solid #ccc; 
+    width: 100%;
+}
+
 .lista td{
     text-align: center;
     background-color: #e3e3e3;

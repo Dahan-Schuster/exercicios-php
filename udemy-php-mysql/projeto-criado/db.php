@@ -48,8 +48,9 @@ $listaDeCursos = mysqli_query($conexao, $buscaCursos);
 $buscaAlunos = "SELECT * FROM ALUNOS";
 $listaDeAlunos = mysqli_query($conexao, $buscaAlunos);
 
-$buscaMatriculas = "SELECT ALUNO.nome_aluno as Aluno, CURSO.nome_curso as Curso
+$buscaMatriculas = "SELECT ALUNOS.nome_aluno as Aluno, CURSOS.nome_curso as Curso
                     FROM ALUNOS_CURSOS, ALUNOS, CURSOS WHERE 
-                    ALUNO.id_aluno = ALUNO_FAZ_CURSO.id_aluno AND
-                    CURSO.id_curso = ALUNO_FAZ_CURSO.id_curso  ";
+                    ALUNOS.id_aluno = ALUNOS_CURSOS.id_aluno AND
+                    CURSOS.id_curso = ALUNOS_CURSOS.id_curso;";
+                    
 $listaDeMatriculas = mysqli_query($conexao, $buscaMatriculas);

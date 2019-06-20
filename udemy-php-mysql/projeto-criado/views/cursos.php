@@ -1,5 +1,5 @@
 <a href="?pagina=inserir_curso">Inserir curso</a>
-<table class="lista" style="border:1px solid #ccc; width: 100%;">
+<table class="lista" align="center">
     <tr>
         <th>Curso</th>
         <th>Carga horária</th>

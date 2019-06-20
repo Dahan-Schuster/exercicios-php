@@ -1,5 +1,5 @@
 <a href="?pagina=inserir_aluno">Inserir aluno</a>
-<table class="lista" style="border:1px solid #ccc; width: 100%;" align="center">
+<table class="lista" align="center">
     <tr>
         <th>Aluno(a)</th>
         <th>E-mail</th>

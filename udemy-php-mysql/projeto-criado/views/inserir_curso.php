@@ -14,6 +14,7 @@
                 alert("Insira uma carga horária menor que 100 horas!");
                 formInserirCurso.carga_horaria.focus();
                 return false;
+                
             } else if (parseInt(cargaHoraria) < 1) {
                 alert("Insira uma carga horária real!");
                 formInserirCurso.carga_horaria.focus();
