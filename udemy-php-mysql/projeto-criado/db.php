@@ -40,7 +40,9 @@ $query = "CREATE TABLE IF NOT EXISTS ALUNOS_CURSOS(
  
 $executar = mysqli_query($conexao, $query);
 
+# Fim criação de tabelas *****************************************************
 
+# Preparando lista de registros de cada tabela *******************************
 
 $buscaCursos = "SELECT * FROM CURSOS";
 $listaDeCursos = mysqli_query($conexao, $buscaCursos);
@@ -48,9 +50,18 @@ $listaDeCursos = mysqli_query($conexao, $buscaCursos);
 $buscaAlunos = "SELECT * FROM ALUNOS";
 $listaDeAlunos = mysqli_query($conexao, $buscaAlunos);
 
-$buscaMatriculas = "SELECT ALUNOS.nome_aluno as Aluno, CURSOS.nome_curso as Curso
+$buscaMatriculas = "SELECT ALUNOS.nome_aluno as Aluno, CURSOS.nome_curso as Curso, ALUNOS_CURSOS.id_aluno_curso
                     FROM ALUNOS_CURSOS, ALUNOS, CURSOS WHERE 
                     ALUNOS.id_aluno = ALUNOS_CURSOS.id_aluno AND
                     CURSOS.id_curso = ALUNOS_CURSOS.id_curso;";
                     
 $listaDeMatriculas = mysqli_query($conexao, $buscaMatriculas);
+
+# Fim listagem de registros **************************************************
+
+function buscarPorCampo($tabela, $campo, $valor)
+{
+	global $conexao;
+	$busca = "SELECT * FROM $tabela WHERE $campo = $valor";
+	return mysqli_query($conexao, $busca);
+}

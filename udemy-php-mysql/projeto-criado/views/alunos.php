@@ -4,6 +4,8 @@
         <th>Aluno(a)</th>
         <th>E-mail</th>
         <th>Data de nascimento</th>
+        <th>Deletar</th>
+        <th>Editar</th>
     </tr>
 
     <?php
@@ -12,8 +14,10 @@
             echo '<tr><td>'.$linha['nome_aluno'].'</td>';
             echo '<td>'.$linha['email_aluno'].'</td>';
             $dataNascimento = $linha['data_nascimento'];
-            echo '<td>' . formatarDataDeNascimentoComBarras($dataNascimento) . '</td></tr>';
-
+            echo '<td>' . formatarDataDeNascimentoComBarras($dataNascimento) . '</td>';
+            echo "<td><a href='deleta_aluno.php?id=" . base64_encode($linha['id_aluno']) . "'><img width='32px' src='img/del.png'></a></td>";
+            echo "<td><a href='?pagina=inserir_aluno&editar=" . base64_encode($linha['id_aluno']) . "'><img width='32px' src='img/edit.png'></a></td>";
+            echo "</tr>";
         }
     }
 

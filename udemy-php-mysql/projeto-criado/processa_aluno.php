@@ -4,14 +4,10 @@ include_once 'db.php';
 
 $nome_aluno = $_POST['nome_aluno'];
 $email_aluno = $_POST['email_aluno'];
-$nascimento_aluno = $_POST['nascimento_aluno'];
-
-echo $nome_aluno;
-echo $email_aluno;
-echo $nascimento_aluno;
+$data_nascimento = $_POST['data_nascimento'];
 
 $queryInsertAluno = "INSERT INTO ALUNOS(nome_aluno, email_aluno, data_nascimento) values 
-('$nome_aluno', '$email_aluno', '$nascimento_aluno')";
+('$nome_aluno', '$email_aluno', '$data_nascimento')";
 
 var_dump(mysqli_query($conexao, $queryInsertAluno));
 
