@@ -1,9 +1,34 @@
+<head>
+    <script language="JavaScript" type="text/javascript">
+        function validar() {
+            var nomeAluno = formAluno.nome_aluno.value;
+            var emailAluno = formAluno.email_aluno.value;
+            var data = formAluno.data_nascimento.value;
+            
+            if (nomeAluno.trim() == "" || nomeAluno.match("/\d/") != null) {
+                alert("Insira um nome válido.");
+                formAluno.nome_aluno.focus();
+                return false;
+            } else if (emailAluno.trim() == "") {
+                alert("Insira um email válido.");
+                formAluno.email_aluno.focus();
+                return false;
+            } else if (data.length == 0) {
+                alert("Insira uma data de nascimento.");
+                formAluno.data_nascimento.focus();
+                return false;
+            }
+
+
+        }
+    </script>
+</head>
 <a href="?pagina=inserir_aluno">Inserir aluno</a>
 <table class="lista" align="center">
     <tr>
-        <th>Aluno(a)</th>
-        <th>E-mail</th>
-        <th>Data de nascimento</th>
+        <th><a class="orderBy" href="index.php?pagina=alunos&orderAlunoBy=nome_aluno">Aluno(a)</a></th>
+        <th><a class="orderBy" href="index.php?pagina=alunos&orderAlunoBy=email_aluno">E-mail</a></th>
+        <th><a class="orderBy" href="index.php?pagina=alunos&orderAlunoBy=data_nascimento">Data de nascimento</a></th>
         <th>Deletar</th>
         <th>Editar</th>
     </tr>
@@ -31,4 +56,14 @@
         return "$dia/$mes/$ano";
     }
     ?>
+    <form action="processa_aluno.php" method="post" name="formAluno">
+        <tr>    
+            <td><input type="text" name="nome_aluno" placeholder="Insira o nome do aluno"></td>
+            <td><input type="text" name="email_aluno" placeholder="Email do aluno"></td>
+             <td><input type="date" name="data_nascimento" placeholder="Data de nascimento"></td>
+            <td colspan="2">
+                    <input class="submit-cadastro btn-in-table" type="submit" value="Inserir aluno"  onclick="return validar();"/>
+            </td>
+        </tr>
+    </form>
 </table>

@@ -43,8 +43,8 @@
                 <td><input type="number" name="carga_horaria" placeholder="Carga horária" value=<?php echo $linha['carga_horaria']?>> <b>&emsp;h</b></td>
             </tr>
         </table>
-        <div  class="submit-cadastro">
-            <input type="submit" value="Inserir curso"  onclick="return validar()"/>
+        <div  class="center">
+            <input class="submit-cadastro" type="submit" value="Inserir curso"  onclick="return validar()"/>
         </div>
     </form>
 <?php } else { ?>
@@ -62,8 +62,8 @@
             <td><input type="number" name="carga_horaria" placeholder="Carga horária"><b>&emsp;h</b></td>
         </tr>
     </table>
-    <div  class="submit-cadastro">
-        <input type="submit" value="Inserir curso"  onclick="return validar()"/>
+    <div  class="center">
+        <input class="submit-cadastro" type="submit" value="Inserir curso"  onclick="return validar()"/>
     </div>
 </form>
 

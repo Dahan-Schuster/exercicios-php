@@ -24,6 +24,10 @@ footer {
     color: lightgray;
 }
 
+.orderBy {
+    color: white;
+}
+
 .lista {
     border: 1px solid #ccc; 
     width: 100%;
@@ -56,25 +60,28 @@ footer {
 
 .formulario input[type="number"] {
     text-align: right;
-    width: 175px;
 }
 
-.submit-cadastro {
+.center {
     display: flex;
     justify-content: center;
 }
 
-.submit-cadastro input {
+.submit-cadastro {
     border: 0px;
     background-color: forestgreen;
     color: white;
     padding: 10px;
 }
 
-.submit-cadastro:hover input {
+.submit-cadastro:hover {
     background-color: #00d33a;
     color: black;
     cursor: pointer;
+}
+
+.btn-in-table {
+    width: 100%;
 }
 
 

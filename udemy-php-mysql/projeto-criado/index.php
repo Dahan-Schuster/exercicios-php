@@ -8,6 +8,9 @@
  * Mestre de cerimônias do sistema
  */
 
+#Fuso horário
+date_default_timezone_set("America/Maceio");
+
 #Base de dados
 include_once 'db.php';
 

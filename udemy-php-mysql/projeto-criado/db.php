@@ -35,6 +35,7 @@ $query = "CREATE TABLE IF NOT EXISTS ALUNOS_CURSOS(
 	id_aluno_curso int not null auto_increment,
 	id_aluno int not null,
 	id_curso int not null,
+	data_matricula date not null default current_timestamp(),
 	primary key(id_aluno_curso)
 )";
  
@@ -44,20 +45,34 @@ $executar = mysqli_query($conexao, $query);
 
 # Preparando lista de registros de cada tabela *******************************
 
-$buscaCursos = "SELECT * FROM CURSOS";
+$orderCursoBy = (isset($_GET['orderCursoBy']) ? $_GET['orderCursoBy'] : "nome_curso");
+
+$buscaCursos = "SELECT * FROM CURSOS ORDER BY $orderCursoBy";
 $listaDeCursos = mysqli_query($conexao, $buscaCursos);
 
-$buscaAlunos = "SELECT * FROM ALUNOS";
+$orderAlunoBy = (isset($_GET['orderAlunoBy']) ? $_GET['orderAlunoBy'] : "nome_aluno");
+
+$buscaAlunos = "SELECT * FROM ALUNOS ORDER BY $orderAlunoBy";
 $listaDeAlunos = mysqli_query($conexao, $buscaAlunos);
 
-$buscaMatriculas = "SELECT ALUNOS.nome_aluno as Aluno, CURSOS.nome_curso as Curso, ALUNOS_CURSOS.id_aluno_curso
+$orderMatBy = (isset($_GET['orderMatBy']) ? $_GET['orderMatBy'] : "Matricula");
+
+
+$buscaMatriculas = "SELECT ALUNOS.nome_aluno as Aluno, CURSOS.nome_curso as Curso, ALUNOS_CURSOS.id_aluno_curso, ALUNOS_CURSOS.data_matricula as Matricula
                     FROM ALUNOS_CURSOS, ALUNOS, CURSOS WHERE 
                     ALUNOS.id_aluno = ALUNOS_CURSOS.id_aluno AND
-                    CURSOS.id_curso = ALUNOS_CURSOS.id_curso;";
+                    CURSOS.id_curso = ALUNOS_CURSOS.id_curso ORDER BY $orderMatBy;";
                     
 $listaDeMatriculas = mysqli_query($conexao, $buscaMatriculas);
 
+
 # Fim listagem de registros **************************************************
+
+function selectOrderByCampo($tabela, $campo){
+	global $conexao;
+	$busca = "SELECT * FROM $tabela ORDER BY $campo";
+	return mysqli_query($conexao, $busca);
+}
 
 function buscarPorCampo($tabela, $campo, $valor)
 {

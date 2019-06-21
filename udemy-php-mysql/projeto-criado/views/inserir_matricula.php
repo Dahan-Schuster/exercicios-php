@@ -57,8 +57,8 @@ if ($listaDeCursos->num_rows == 0 || $listaDeAlunos->num_rows == 0) {
             </td>
         </tr>
     </table>
-    <div  class="submit-cadastro">
-        <input type="submit" value="Matricular"  onclick="return validar()"/>
+    <div  class="center">
+        <input class="submit-cadastro" type="submit" value="Matricular"  onclick="return validar()"/>
     </div>
 </form>
 

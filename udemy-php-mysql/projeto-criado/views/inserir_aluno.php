@@ -48,8 +48,8 @@
                 <td><input type="date" name="data_nascimento" placeholder="Data de nascimento" value=<?php echo $linha['data_nascimento']?>></td>
             </tr>
         </table>
-        <div  class="submit-cadastro">
-            <input type="submit" value="Atualizar"  onclick="return validar();"/>
+        <div  class="center">
+            <input class="submit-cadastro" type="submit" value="Atualizar"  onclick="return validar();"/>
         </div>
     </form>
 
@@ -72,8 +72,8 @@
             <td><input type="date" name="data_nascimento" placeholder="Data de nascimento"></td>
         </tr>
     </table>
-    <div  class="submit-cadastro">
-        <input type="submit" value="Inserir aluno"  onclick="return validar();"/>
+    <div  class="center">
+        <input class="submit-cadastro" type="submit" value="Inserir aluno"  onclick="return validar();"/>
     </div>
 </form>
 
